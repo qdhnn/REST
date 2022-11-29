@@ -2,7 +2,7 @@ import json
 import http.client
 import pprint
 
-# API Settigs .+++++++
+# API Settigs .+++++++3
 AUTH_TOKEN = '5cc8a056f50f238c1f81300ce81a4fd31bf95d27'  # Your authorization token
 HOST = 'my.prom.ua'  # e.g.: my.prom.ua, my.tiu.ru, my.satu.kz, my.deal.by, my.prom.md
 print('''
