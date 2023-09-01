@@ -99,8 +99,8 @@ def main():
     api_example = EvoClientExample(AUTH_TOKEN)
 
     if a == 1:
-    #
-    #
+        #
+        #
         pprint.pprint(api_example.get_order_list())
 
     elif a == 2:
@@ -115,11 +115,11 @@ def main():
         pprint.pprint(api_example.get_group())
 
     elif a == 4:
-        #client_list = api_example.get_client_list()
+        # client_list = api_example.get_client_list()
         pprint.pprint(api_example.get_client_list())
 
     if a == 5:
-    # Order example data. Requred to be setup to get example work
+        # Order example data. Requred to be setup to get example work
         print('Ввести номер заказа или использовать 217414788 [y/n]?')
         q = str(input('''q
         '''))
@@ -132,7 +132,7 @@ def main():
         pprint.pprint(order)
 
     if a == 6:
-    # Order example data. Requred to be setup to get example work
+        # Order example data. Requred to be setup to get example work
         print('Ввести номер заказа или использовать 217397388 [y/n]?')
         q = str(input('''q
         '''))
@@ -141,26 +141,29 @@ def main():
             '''))
         else:
             id = int(217397388)
-            #id = int(217414788)
-            #id = int(217397388)
-        #order_id = order_list['orders'][0]['id']
-        #id = int(input('''input id
-        #'''))
-        ##---
-        #order_id = order_list['orders'][0]['id']
+            # id = int(217414788)
+            # id = int(217397388)
+        # order_id = order_list['orders'][0]['id']
+        # id = int(input('''input id
+        # '''))
+        # ---
+        # order_id = order_list['orders'][0]['id']
         status = 'received'
         ids = [id]
         order = api_example.set_order_status(status=status, ids=ids)
 
     # Setting order status
-        #pprint.pprint(api_example.set_order_status(status=status, ids=order_ids))
+        # pprint.pprint(api_example.set_order_status(status=status, ids=order_ids))
 
     # # Getting order by id--
-        #pprint.pprint(api_example.get_order(order_id))
-        #pprint.pprint(api_example.get_order())
+        # pprint.pprint(api_example.get_order(order_id))
+        # pprint.pprint(api_example.get_order())
         pprint.pprint(order)
-    #else:
+    # else:
     #    print('wrong')
+
 
 if __name__ == '__main__':
     main()
+
+# end
